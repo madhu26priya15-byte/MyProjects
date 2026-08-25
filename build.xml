@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="MyProjects" default="checkstyle" basedir=".">
+
+<project name="MyProjects" default="war" basedir=".">
 
     <target name="checkstyle">
         <echo message="Running checkstyle..." />
+    </target>
+
+    <target name="war" depends="checkstyle">
+        <echo message="WAR file is ready for deployment." />
     </target>
 
 </project>
